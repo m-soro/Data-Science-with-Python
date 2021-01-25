@@ -1,7 +1,3 @@
----
-layout: home
-image: /images/logo.png
----
 
 # Data Science with Python
 View the [Syllabus](#)
