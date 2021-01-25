@@ -1,2 +1,10 @@
 remote_theme: pmarsceill/just-the-docs
 title: Data Science with Python
+description: Mark Soro projects, codes and modules for Programming for Data Science with Python from Udacity.
+baseurl: /Data-Science-with-Python
+github_username: m-soro
+plugins:
+  - jemoji
+  - jekyll-seo-tag
+ga_tracking: UA-172472287-2  
+
