@@ -15,10 +15,10 @@ social:
     - https://www.facebook.com/msoro1
 
 # Build settings
-theme: just-the-docs
+
 plugins:
   - jekyll-feed
   - jemoji
   - jekyll-seo-tag
-  
-  ga_tracking: UA-172472287-2
+
+ga_tracking: UA-172472287-2
