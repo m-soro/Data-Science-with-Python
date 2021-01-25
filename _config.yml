@@ -1,2 +1,3 @@
 remote_theme: pmarsceill/just-the-docs
-
+baseurl:"/Data-Science-with-Python/"
+title: Data Science with Python
