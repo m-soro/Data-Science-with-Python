@@ -1,7 +1,3 @@
----
-layout: home
-image: /assets/images/logo.png
----
 
 # Data Science with Python
 View the [Syllabus](/assets/files/syllabus.pdf)
