@@ -14,8 +14,8 @@ See my `_config.yml` file. At First I was developing this locally, but I ran int
   
 This will be just personal notes to mysel in case I need to re-create this again.
 
--`README.md` and `index.md` are both completely different file. `README.md` is actual readme file, while `index.md` is what is actually rendered. In `index.md` I can set the front matter `title`, `nav_order`, `image`, etc. it depends on the theme(I'm unsure)?
+- `README.md` and `index.md` are both completely different file. `README.md` is actual readme file, while `index.md` is what is actually rendered. In `index.md` I can set the front matter `title`, `nav_order`, `image`, etc. it depends on the theme(I'm unsure)?
 
--Before starting a project website, make sure I know what directories and pages are going to be required.
+- Before starting a project website, make sure I know what directories and pages are going to be required.
 
 
