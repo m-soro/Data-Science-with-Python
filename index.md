@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Projects
+title: Modules
 has_children: true
-nav_order: 2
+nav_order: 1
 ---
 
-# My Projects
+# Modules
 
-Welcome to the projects page!
+Welcome to the modules page!
