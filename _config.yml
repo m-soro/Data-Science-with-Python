@@ -1,1 +1,22 @@
 remote_theme: pmarsceill/just-the-docs
+title: Data Science with Python
+email: napoleon_soro@rocketmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Mark Soro projects, codes and modules for Programming for Data Science with Python from Udacity.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  m-soro
+social:
+  name: Mark Soro
+  links:
+    - https://www.linkedin.com/in/marksoro
+    - https://github.com/m-soro
+    - https://www.facebook.com/msoro1
+
+# Build settings
+theme: just-the-docs
+plugins:
+  - jekyll-feed
+  - jemoji
+  - jekyll-seo-tag
