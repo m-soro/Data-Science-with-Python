@@ -1,6 +1,7 @@
 ---
 layout: default
 image: https://i.morioh.com/3618b64471.png
+nav_order: 1
 ---
 # Data Science with Python
 View the [Syllabus](/assets/files/syllabus.pdf)
