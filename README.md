@@ -1,6 +1,6 @@
 ---
 layout: home
-image: /assets/images/logo.png
+image: /images/logo.png
 ---
 
 # Data Science with Python
