@@ -1,7 +1,6 @@
 ---
 layout: default
-parent: Site
-grand_parent: Notes
+parent: Notes
 has_children: true
 ---
 
