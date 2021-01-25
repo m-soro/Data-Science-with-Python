@@ -3,6 +3,7 @@ title: Data Science with Python
 description: Mark Soro projects, codes and modules for Programming for Data Science with Python from Udacity.
 baseurl: /Data-Science-with-Python
 github_username: m-soro
+image: https://i.morioh.com/3618b64471.png
 plugins:
   - jemoji
   - jekyll-seo-tag
