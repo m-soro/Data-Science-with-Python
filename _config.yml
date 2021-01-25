@@ -20,3 +20,5 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-seo-tag
+  
+  ga_tracking: UA-172472287-2
