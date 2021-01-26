@@ -3,9 +3,8 @@ layout: default
 image: https://i.morioh.com/3618b64471.png
 nav_order: 1
 ---
-# This is still a Work in Progress... 
-
-I have not started the course yet. This is still a skeleton website. 
+# Work in Progress... 
+FYI, I have not started the course yet. I just wanted set up a skeleton website =)
 
 # Data Science with Python
 View the [Syllabus](/assets/files/syllabus.pdf)
