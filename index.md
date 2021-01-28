@@ -10,7 +10,7 @@ nav_order: 1
 
 <iframe src="python_codes/test_gist1.html"></iframe>
 
-<iframe height="600px" width="150%" src="https://repl.it/@msoro/python-adventure-game?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<iframe height="600px" width="100%" src="https://repl.it/@msoro/python-adventure-game?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 View the [Syllabus](/assets/files/syllabus.pdf)
 
