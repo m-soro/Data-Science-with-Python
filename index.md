@@ -6,19 +6,6 @@ nav_order: 1
 
 # Data Science with Python
 
-### :warning: Work in Progress... :warning: FYI, I have not started the course yet. I just wanted set up a skeleton website =)
-
-<iframe src="python_codes/test_gist1.html"></iframe>
-
-<iframe height="600px" width="100%" src="https://repl.it/@msoro/python-adventure-game?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-
-<iframe height="600px" width="100%" src="https://repl.it/@msoro/python-adventure-game?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-[intro](https://colab.research.google.com/drive/1soO8ilS5zROj6-zZLg-U2DreRInBkGku?usp=sharing)
-
-<iframe style="width: 640; height: 480; border: none;" name="embedded_python_anywhere2" src="https://www.pythonanywhere.com/embedded/"></iframe>
-
 View the [Syllabus](/assets/files/syllabus.pdf)
 
 What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -31,6 +18,5 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 
 Where can I get some? There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/22sQCo6ovH0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Back to top](#)
