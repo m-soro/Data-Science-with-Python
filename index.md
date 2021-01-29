@@ -12,7 +12,7 @@ nav_order: 1
 
 <iframe height="600px" width="100%" src="https://repl.it/@msoro/python-adventure-game?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
-<iframe style="width: 640; height: 480; border: none;" name="embedded_python_anywhere" src="https://www.pythonanywhere.com/embedded3/"></iframe>
+<iframe style="width: 640; height: 480; border: none;" name="embedded_python_anywhere2" src="https://www.pythonanywhere.com/embedded/"></iframe>
 
 View the [Syllabus](/assets/files/syllabus.pdf)
 
