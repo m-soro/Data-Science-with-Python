@@ -268,7 +268,7 @@ Commonly when we are using WHERE with non-numeric data fields, we use the **LIKE
   WHERE name = 'Exxon Mobil';
 ```
 
-###[Derived Columns](https://www.youtube.com/watch?v=fgcJdiNECxI)
+### [Derived Columns](https://www.youtube.com/watch?v=fgcJdiNECxI)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fgcJdiNECxI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 Creating a new column that is a combination of existing columns is known as a **derived column** (or **"calculated"** or **"computed"** column). Usually you want to give a name, or "alias," to your new column using the **AS** keyword.
