@@ -13,3 +13,4 @@ In `Joins SQL Queries.txt`
 * Quiz 13: Notice that the endpoint is '2016-01-01' the later part of the `BETWEEN` clause is ommitted. 
 ---
 * `NULL` is not a value but a property of the data, therefore `NULL = 0` does not work! When working with `NULL`s you write `IS NULL` or `IS NOT NULL`.
+* Helpful [link](https://www.compose.com/articles/metrics-maven-meet-in-the-middle-median-in-postgresql/) to find the median
