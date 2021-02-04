@@ -23,8 +23,8 @@ In `sql_aggregations_queries.txt`
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UPWkDhW4cLI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 * Quiz 36 Notice this line
-WHERE occurred_at BETWEEN '2014-01-01' AND '2017-01-01'
+`WHERE occurred_at BETWEEN '2014-01-01' AND '2017-01-01'`
 
 * Quiz 37 
-WHERE DATE_TRUNC('year', OCCURRED_AT) BETWEEN '2014-01-01 00:00:00' AND '2016-01-01 00:00:00'
+`WHERE DATE_TRUNC('year', OCCURRED_AT) BETWEEN '2014-01-01 00:00:00' AND '2016-01-01 00:00:00'`
 Un-neccessary but both lines work
