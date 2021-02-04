@@ -18,5 +18,5 @@ In `joins_sql_queries.txt`
 In `sql_aggregations_queries.txt`
 * Quiz 32: You can also pre-filter with `AND` in `HAVING` clause.
 
-* Working with dates -->`DATE_TRUNC` 
+* Working with dates -->`DATE_TRUNC` and `DATE_PART`
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UPWkDhW4cLI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
