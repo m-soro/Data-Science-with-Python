@@ -22,6 +22,9 @@ In `sql_aggregations_queries.txt`
 * Working with dates -->`DATE_TRUNC` and `DATE_PART`
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UPWkDhW4cLI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* Quiz 37 Notice this line
-where date_trunc('year',occurred_at) between '2014-01-01 00:00:00' and '2016-01-01 00:00:00'
-filter between yearr is written as is complete with the timestamp and enclosed in quotes.
+* Quiz 36 Notice this line
+WHERE occurred_at BETWEEN '2014-01-01' AND '2017-01-01'
+
+* Quiz 37 
+WHERE DATE_TRUNC('year', OCCURRED_AT) BETWEEN '2014-01-01 00:00:00' AND '2016-01-01 00:00:00'
+Un-neccessary but both lines work
