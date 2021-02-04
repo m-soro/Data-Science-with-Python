@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SQL Aggregations
+title: SQL Subqueries and Temporary Tables
 parent:  Introduction to SQL
 grand_parent: Modules
 nav_order: 4
