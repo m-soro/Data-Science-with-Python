@@ -17,3 +17,9 @@ Click [here](aggregations.txt) to view the text file.
 * Uses `JOINS`.
 
 Click [here](joins.txt) to view the text file.
+
+### CTEs and Subqueries
+
+* Uses Subqueries and `WITH` statement.
+
+Click [here](cte_and_subqueries.txt) to view the text file.
