@@ -30,4 +30,7 @@ In `sql_aggregations_queries.txt`
 Un-neccessary but both lines work
 
 In Data Cleaning SQL:
+
 CAST(to_cast as DATEorSomethingElse) or ::DATEOrSomethingElse.
+
+[COALESCE](https://youtu.be/86vgu-ECBCQ?t=28)
