@@ -28,3 +28,6 @@ In `sql_aggregations_queries.txt`
 * Quiz 37 
 `WHERE DATE_TRUNC('year', OCCURRED_AT) BETWEEN '2014-01-01 00:00:00' AND '2016-01-01 00:00:00'`
 Un-neccessary but both lines work
+
+In Data Cleaning SQL:
+CAST(to_cast as DATEorSomethingElse) or ::DATEOrSomethingElse.
