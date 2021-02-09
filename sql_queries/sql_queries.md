@@ -6,6 +6,12 @@ nav_order: 4
 
 ## SQL quizzes and my solutions
 
+### Window functions
+
+* Uses Window functions, `OVER`, `PARTITION BY`, `ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LAG`, `LEAD` and `NTILE`.
+
+Click [here](window_functions.txt) to view the text file.
+
 ### CTEs and Subqueries
 
 * Uses Subqueries and `WITH` statement.
@@ -23,5 +29,3 @@ Click [here](aggregations.txt) to view the text file.
 * Uses `JOINS`.
 
 Click [here](joins.txt) to view the text file.
-
-
