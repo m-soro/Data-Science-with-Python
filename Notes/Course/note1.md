@@ -34,3 +34,7 @@ In Data Cleaning SQL:
 CAST(to_cast as DATEorSomethingElse) or ::DATEOrSomethingElse.
 
 [COALESCE](https://youtu.be/86vgu-ECBCQ?t=28)
+
+Window Functions:
+
+>The easiest way to think about this - leaving the ORDER BY out is equivalent to "ordering" in a way that all rows in the partition are "equal" to each other. Indeed, you can get the same effect by explicitly adding the ORDER BY clause like this: ORDER BY 0 (or "order by" any constant expression), or even, more emphatically, ORDER BY NULL.
