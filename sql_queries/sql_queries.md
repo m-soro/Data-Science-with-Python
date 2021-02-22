@@ -6,6 +6,12 @@ nav_order: 4
 
 ## SQL quizzes and my solutions
 
+### Project Prep Questions
+
+* Uses a combination of all sql command.
+
+Click [here](project_questions.txt) to view.
+
 
 ### Advance Joins
 
