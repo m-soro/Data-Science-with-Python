@@ -11,7 +11,7 @@ nav_order: 1
 View the [Syllabus](/assets/files/syllabus.pdf)
 
 
-* Learn the **Python** programming and its powerful libraries for data science - **Numpy** and **Pandas**.
+* Learn **Python** programming and its powerful libraries for data science - **Numpy** and **Pandas**.
 
 * Utilize **SQL** to explore databases to gather data, analyze and produce an insight.
 
