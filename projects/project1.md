@@ -19,10 +19,10 @@ Final deliverables are:
 
 **SQL queries** that was used to pull data that answers the question.
 
-[Click](projects/project1/sql_project/queries.txt) to view the SQL query txt file.
+[Click](/project1/sql_project/queries.txt) to view the SQL query txt file.
 
 **Data visualization** in slides.
 
-[Click](projects/project1/sql_project/report.pdf) to view the pdf file.
+[Click](/project1/sql_project/report.pdf) to view the pdf file.
 
 Download the project file [here](https://github.com/m-soro/Data-Science-with-Python/tree/main/projects/project1/sql_project).
