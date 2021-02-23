@@ -1,0 +1,173 @@
+1. Write a query that displays the order ID, account ID, and total dollar amount for all the orders, sorted first by the account ID (in ascending order), and then by the total dollar amount (in descending order).
+
+SELECT ID, ACCOUNT_ID, TOTAL_AMT_USD
+FROM ORDERS
+ORDER BY 2, 3 DESC 
+
+2. Now write a query that again displays order ID, account ID, and total dollar amount for each order, but this time sorted first by total dollar amount (in descending order), and then by account ID (in ascending order).
+
+SELECT ID, ACCOUNT_ID, TOTAL_AMT_USD
+FROM ORDERS
+ORDER BY 3 DESC, 1
+
+3. Write a query that:
+
+3.1 Pulls the first 5 rows and all columns from the orders table that have a dollar amount of gloss_amt_usd greater than or equal to 1000.
+
+SELECT *
+FROM ORDERS
+WHERE GLOSS_AMT_USD >= 1000
+LIMIT 5
+
+
+3.2 Pulls the first 10 rows and all columns from the orders table that have a total_amt_usd less than 500.
+
+SELECT *
+FROM ORDERS
+WHERE TOTAL_AMT_USD < 500
+LIMIT 10
+
+4. Filter the accounts table to include the company name, website, and the primary point of contact (primary_poc) just for the Exxon Mobil company in the accounts table.
+
+SELECT NAME, WEBSITE, PRIMARY_POC
+FROM ACCOUNTS
+WHERE NAME = 'Exxon Mobil'
+
+
+5. Using the orders table: Create a column that divides the standard_amt_usd by the standard_qty to find the unit price for standard paper for each order. Limit the results to the first 10 orders, and include the id and account_id fields.
+
+SELECT ROUND(STANDARD_AMT_USD/STANDARD_QTY,2) AS UNIT_PRICE_STD
+FROM ORDERS
+LIMIT 10
+
+6. Using the orders table:Write a query that finds the percentage of revenue that comes from poster paper for each order. You will need to use only the columns that end with _usd. (Try to do this without using the total column.) Display the id and account_id fields also. NOTE - you will receive an error with the correct solution to this question. This occurs because at least one of the values in the data creates a division by zero in your formula. You will learn later in the course how to fully handle this issue. For now, you can just limit your calculations to the first 10 orders, as we did in question #1, and you'll avoid that set of data that causes the problem.
+
+SELECT ROUND(POSTER_AMT_USD/(STANDARD_AMT_USD + GLOSS_AMT_USD + POSTER_AMT_USD),5) * 100 
+		AS PERCENT_REV_FRM_POSTER
+FROM ORDERS
+LIMIT 10 
+
+
+7. Use the accounts table to find: All the companies whose names start with 'C'.
+
+SELECT NAME
+FROM ACCOUNTS
+WHERE NAME like 'C%'
+
+8. Use the accounts table to find: All companies whose names contain the string 'one' somewhere in the name.
+
+SELECT NAME
+FROM ACCOUNTS
+WHERE NAME like '%one%'
+
+9. Use the accounts table to find: All companies whose names end with 's'.
+
+SELECT NAME
+FROM ACCOUNTS
+WHERE NAME LIKE '%s'
+
+----> for some strange reason this results doesnt show up in pgadmin
+
+10. Use the accounts table to find the account name, primary_poc, and sales_rep_id for Walmart, Target, and Nordstrom.
+
+SELECT NAME, PRIMARY_POC, SALES_REP_ID
+FROM ACCOUNTS
+WHERE NAME IN ('Target','Nordstrom')
+
+11. Use the web_events table to find all information regarding individuals who were contacted via the channel of organic or adwords.
+
+SELECT *
+FROM WEB_EVENTS
+WHERE CHANNEL IN ('organic','adwords')
+
+12. Use the accounts table to find the account name, primary poc, and sales rep id for all stores except Walmart, Target, and Nordstrom.
+
+SELECT NAME, PRIMARY_POC, SALES_REP_ID
+FROM ACCOUNTS
+WHERE NAME NOT IN ('Walmart','Target','Nordstrom')
+
+
+13. Use the web_events table to find all information regarding individuals who were contacted via any method except using organic or adwords methods.
+
+SELECT *
+FROM WEB_EVENTS
+WHERE CHANNEL NOT IN ('organic','adwords')
+
+
+14. Use the accounts table to find: All the companies whose names do not start with 'C'.
+
+SELECT NAME
+FROM ACCOUNTS
+WHERE NAME not like 'C%'
+ORDER BY 1
+
+15. Use the accounts table to find: All companies whose names do not contain the string 'one' somewhere in the name.
+
+SELECT NAME
+FROM ACCOUNTS
+WHERE NAME not like '%one%'
+
+16. Use the accounts table to find: All companies whose names do not end with 's'.
+
+SELECT NAME
+FROM ACCOUNTS
+WHERE NAME not like '%s'
+
+17. Write a query that returns all the orders where the standard_qty is over 1000, the poster_qty is 0, and the gloss_qty is 0.
+
+SELECT *
+FROM ORDERS
+WHERE STANDARD_QTY > 1000
+		AND POSTER_QTY = 0
+		AND GLOSS_QTY = 0
+
+18. Using the accounts table, find all the companies whose names do not start with 'C' and end with 's'.
+
+SELECT *
+FROM ACCOUNTS
+WHERE NAME not like 'C%'
+		AND NAME not like '%s'
+
+19. When you use the BETWEEN operator in SQL, do the results include the values of your endpoints, or not? Figure out the answer to this important question by writing a query that displays the order date and gloss_qty data for all orders where gloss_qty is between 24 and 29. Then look at your output to see if the BETWEEN operator included the begin and end values or not.
+
+SELECT OCCURRED_AT, GLOSS_QTY
+FROM ORDERS
+WHERE GLOSS_QTY BETWEEN 24 AND 29
+ORDER BY 2
+
+---> yes, it includes endpoints
+
+20. Use the web_events table to find all information regarding individuals who were contacted via the organic or adwords channels, and started their account at any point in 2016, sorted from newest to oldest.
+
+SELECT *
+FROM WEB_EVENTS
+WHERE OCCURRED_AT BETWEEN '2016-01-01' AND '2016-12-31'
+				AND CHANNEL IN ('organic','adwords')
+
+
+21. Find list of orders ids where either gloss_qty or poster_qty is greater than 4000. Only include the id field in the resulting table.
+
+SELECT ID
+FROM ORDERS
+WHERE GLOSS_QTY > 4000 OR POSTER_QTY > 4000
+
+
+22. Write a query that returns a list of orders where the standard_qty is zero and either the gloss_qty or poster_qty is over 1000.
+
+SELECT *
+FROM ORDERS
+WHERE STANDARD_QTY = 0
+	AND (GLOSS_QTY > 1000 OR POSTER_QTY > 1000)
+
+23. Find all the company names that start with a 'C' or 'W', and the primary contact contains 'ana' or 'Ana', but it doesn't contain 'eana'.
+
+
+SELECT *
+FROM ACCOUNTS
+WHERE (NAME like 'C%' OR NAME like 'W%')
+		AND (PRIMARY_POC like '%Ana%' OR PRIMARY_POC like '%ana%')
+		AND PRIMARY_POC not like '%eana%'
+
+
+
+
