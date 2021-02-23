@@ -13,7 +13,7 @@ View the [Syllabus](/assets/files/syllabus.pdf)
 
 * Learn **Python** programming and its powerful libraries for data science - **Numpy** and **Pandas**.
 
-* Utilize **SQL** to explore databases to gather data, analyze and produce an insight.
+* Utilize **SQL** to explore databases to gather and analyze data.
 
 * Collaborate, manage versions and publish your work on the web with **Git** and **Github**.
 
