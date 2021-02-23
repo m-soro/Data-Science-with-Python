@@ -1,5 +1,6 @@
 /* Query 1 - Rental based on film length */
 
+
 WITH t1 as ( 
 	     SELECT f.length, 
 	            COUNT(r.*) rental_count,
@@ -27,7 +28,10 @@ SELECT filmlen_groups,
 FROM t2
 ORDER BY 2 DESC
 
+
+
 /* Query 2 What movie categories are popular in each day of the week? */
+
 
 WITH t1 AS ( 
              SELECT DISTINCT(name) AS category_name,
@@ -95,23 +99,26 @@ JOIN t9 ON t8.category_name = t9.category_name AND thu is not null
 JOIN t10 ON t9.category_name = t10.category_name AND fri is not null and sat is not null
 
 
+
+
 /* Query 3 What makes up the percentage of revenue of each store based by movie ratings. */
+
 
 WITH t1 AS ( 
              SELECT st.store_id,
 	            rating,
 		    COUNT(rental_date),
 		    SUM(amount) AS store_one
-		    FROM film f
-		    JOIN inventory i ON f.film_id = i.film_id
-		    JOIN rental r ON r.inventory_id = i.inventory_id
-		    JOIN payment p ON p.rental_id = r.rental_id
-		    JOIN staff s ON p.staff_id = s.staff_id
-		    JOIN store st ON st.store_id = s.store_id
-		    AND st.store_id = 1
-		    GROUP BY 1,2
-            ) ,
-      t2 AS ( 
+             FROM film f
+	     JOIN inventory i ON f.film_id = i.film_id
+	     JOIN rental r ON r.inventory_id = i.inventory_id
+ 	     JOIN payment p ON p.rental_id = r.rental_id
+	     JOIN staff s ON p.staff_id = s.staff_id
+	     JOIN store st ON st.store_id = s.store_id
+	     AND st.store_id = 1
+             GROUP BY 1,2
+           ),
+     t2 AS ( 
               SELECT st.store_id,
                      rating,
 		     COUNT(rental_date),
@@ -124,7 +131,7 @@ WITH t1 AS (
 	      JOIN store st ON st.store_id = s.store_id
 	      AND st.store_id = 2
 	      GROUP BY 1,2
-            ) , 
+            ), 
       t3 AS ( 
                SELECT t1.rating,
 	 	      CASE WHEN t1.store_id = 1 THEN t1.store_one END AS store_one,
@@ -141,7 +148,10 @@ SELECT rating,
 FROM t3
 
 
+
+
 /* Query 4 Get customer count, average spend, and total spend. Limited to top 10 countries that spent the most. */ 
+
 
 WITH t1 AS ( 
              SELECT DISTINCT(cr.country) AS country,
@@ -150,7 +160,7 @@ WITH t1 AS (
 	     JOIN address a ON c.address_id = a.address_id
 	     JOIN city ct ON ct.city_id = a.city_id
 	     JOIN country cr ON ct.country_id = cr.country_id
-	   ) ,
+	   ),
      t2 AS ( 
              SELECT DISTINCT(country) AS country,
 	            AVG(amount) OVER (PARTITION BY country) avg_spend,
