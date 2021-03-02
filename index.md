@@ -17,4 +17,6 @@ View the [Syllabus](/assets/files/syllabus.pdf)
 
 * Collaborate, manage versions and publish your work on the web with **Git** and **Github**.
 
+:warning: *Currently a work in progress* :warning:
+
 This site will have all of my projects for this course, along with code quizzes and my solutions.
