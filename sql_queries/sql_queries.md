@@ -8,15 +8,13 @@ nav_order: 4
 
 ### Project Prep Questions
 
-* Uses a combination of all sql command.
-
-[View Queries](project_questions.txt).
+* Uses a combination of all sql command [view queries](project_questions.txt).
 
 ### Advance Joins
 
 * Uses Advance Joins, `SELF JOINS` and `UNION`.
 
-[View Queries](advanced_joins_performance_tuning.txt) to view.
+[View Queries](advanced_joins_performance_tuning.txt).
 
 ### Window functions
 
