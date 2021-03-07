@@ -29,23 +29,6 @@ The usual order of mathematical operations holds in Python, which you can review
 
 **Bitwise operators** are special operators in Python that you can learn more about [here](https://wiki.python.org/moin/BitwiseOperators) if you'd like.
 
-**Quiz: Average Electricity Bill**
-It's time to try a calculation in Python!
-
-My electricity bills for the last three months have been $23, $32 and $64. What is the average monthly electricity bill over the three month period? Write an expression to calculate the mean, and use print() to view the result.
-
-**Quiz: Calculate**
-In this quiz you're going to do some calculations for a tiler. Two parts of a floor need tiling. One part is 9 tiles wide by 7 tiles long, the other is 5 tiles wide by 7 tiles long. Tiles come in packages of 6.
-
-How many tiles are needed?
-You buy 17 packages of tiles containing 6 tiles each. How many tiles will be left over?
-
-Fill this in with an expression that calculates how many tiles are needed.
-
-Fill this in with an expression that calculates how many tiles will be left over.
-
-
-> Quiz answers are in the python scripts tab
 
 ### Variables and Assignment Operators
 
@@ -105,37 +88,12 @@ Though the last two of these would work in python, they are not pythonic ways to
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/p_qfzL-x3Cs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Assignment Operators
+**Assignment Operators**
+
 Below are the assignment operators from the video. You can also use `*=` in a similar way, but this is less common than the operations shown below. You can find some practice with much of what we have already covered [here](https://www.programiz.com/python-programming/operators).
 
 ![image](https://video.udacity-data.com/topher/2018/January/5a7118b3_screen-shot-2018-01-30-at-5.14.39-pm/screen-shot-2018-01-30-at-5.14.39-pm.png)
 
-**Quiz: Assign and Modify Variables**
-
-Now it's your turn to work with variables. The comments in this quiz (the lines that begin with #) have instructions for creating and modifying variables. After each comment write a line of code that implements the instruction.
-
-Note that this code uses [scientific notation](https://en.wikipedia.org/wiki/Scientific_notation) to define large numbers. `4.445e8` is equal to `4.445 * 10 ** 8` which is equal to `444500000.0`.
-
-The current volume of a water reservoir (in cubic metres)
-reservoir_volume = 4.445e8
-The amount of rainfall from a storm (in cubic metres)
-rainfall = 5e6
-
-decrease the rainfall variable by 10% to account for runoff
-
-add the rainfall variable to the reservoir_volume variable
-
-increase reservoir_volume by 5% to account for stormwater that flows
-into the reservoir in the days following the storm
-
-decrease reservoir_volume by 5% to account for evaporation
-
-subtract 2.5e5 cubic metres from reservoir_volume to account for water
-that's piped to arid regions.
-
-print the new value of the reservoir_volume variable
-
-> Quiz answers are in the python scripts tab
 
 ## Integers and Floats
 
@@ -174,6 +132,7 @@ You can see more on this [here](https://docs.python.org/3/tutorial/floatingpoint
 <iframe width="770" height="433" src="https://www.youtube.com/embed/UxkIwcOczQQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Python Best Practices**
+
 For all the best practices, see the [PEP8 Guidelines](https://www.python.org/dev/peps/pep-0008/).
 
 You can use the atom package [linter-python-pep8](https://atom.io/packages/linter-python-pep8) to use pep8 within your own programming environment in the Atom text editor, but more on this later. If you aren't familiar with text editors yet, and you are performing all of your programming in the classroom, no need to worry about this right now.
@@ -228,21 +187,6 @@ And there are three logical operators you need to be familiar with:
 
 [Here](https://www.irishtimes.com/news/science/how-george-boole-s-zeroes-and-ones-changed-the-world-1.2014673) is more information on how George Boole changed the world!
 
-**Quiz: Which is denser, Rio or San Francisco?**
-
-Try comparison operators in this quiz! This code calculates the population densities of Rio de Janeiro and San Francisco.
-
-Write code to compare these densities. Is the population of San Francisco more dense than that of Rio de Janeiro? Print True if it is and False if not.
-
-sf_population, sf_area = 864816, 231.89
-rio_population, rio_area = 6453682, 486.5
-
-san_francisco_pop_density = sf_population/sf_area
-rio_de_janeiro_pop_density = rio_population/rio_area
-
-Write code that prints `True` if San Francisco is denser than Rio, and `False` otherwise
-
-> Quiz answers are in the python scripts tab
 
 ## Strings
 
@@ -321,44 +265,6 @@ There is an example above, but here's another one:
 ```
 You know what the data types are for len("ababa") and len("ab"). Notice the data type of their resulting quotient here.
 
-**Quiz: Fix the Quote**
-
-# TODO: Fix this string!
-ford_quote = 'Whether you think you can, or you think you can't--you're right.'
-
-**Quiz: Write a Server Log Message**
-In this programming quiz, you’re going to use what you’ve learned about strings to write a logging message for a server.
-
-You’ll be provided with example data for a user, the time of their visit and the site they accessed. You should use the variables provided and the techniques you’ve learned to print a log message like this one (with the username, url, and timestamp replaced with values from the appropriate variables):
-
-`Yogesh accessed the site http://petshop.com/pets/reptiles/pythons at 16:20`.
-
-Use the Test Run button to see your results as you work on coding this piece by piece.
-
-username = "Kinari"
-timestamp = "04:50"
-url = "http://petshop.com/pets/mammals/cats"
-
-TODO: print a log message using the variables above.
-The message should have the same format as this one:
-`Yogesh accessed the site http://petshop.com/pets/reptiles/pythons at 16:20.`
-
-**Quiz: len()**
-Use string concatenation and the len() function to find the length of a certain movie star's actual full name. Store that length in the name_length variable. Don't forget that there are spaces in between the different parts of a name!
-
-given_name = "William"
-middle_names = "Bradley"
-family_name = "Pitt"
-
-name_length = #todo: calculate how long this name is
-
-Now we check to make sure that the name fits within the driving license character limit
-Nothing you need to do here
-driving_license_character_limit = 28
-print(name_length <= driving_license_character_limit)
-
-> Quiz answers are in python scripts tab
-
 ## Type and Type Conversion
 
 <iframe width="810" height="456" src="https://www.youtube.com/embed/yN6Fam_vZrU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -398,23 +304,6 @@ How about the code here:
 
 Checking your variable types is really important to assure that you are retrieving the results you want when programming.
 
-**Quiz: Total Sales**
-
-In this quiz, you’ll need to change the types of the input and output data in order to get the result you want.
-
-Calculate and print the total sales for the week from the data provided. Print out a string of the form `"This week's total sales: xxx"`, where xxx will be the actual total of all the numbers. You’ll need to change the type of the input data in order to calculate that total.
-
-```
-  mon_sales = "121"
-  tues_sales = "105"
-  wed_sales = "110"
-  thurs_sales = "98"
-  fri_sales = "95"
-
-  #TODO: Print a string with this format: This week's total sales: xxx
-  # You will probably need to write some lines of code before the print statement.
-```
-> Quiz answers are in python scripts tab
 
 ## String Methods
 
@@ -490,10 +379,124 @@ You can learn more about strings and string methods by looking at the [string me
 
 You will find that the documentation is one of the most valuable resources for writing code, and not only when it comes to strings or writing code in Python! By reading and searching the documentation you can learn about data types and built-in functions as well as how to use them.
 
+
+---
+
+## Quizzes: Data Types and Operators
+
+**Solutions can be found at the python scripts page**
+
+**Quiz: Average Electricity Bill**
+It's time to try a calculation in Python!
+
+My electricity bills for the last three months have been $23, $32 and $64. What is the average monthly electricity bill over the three month period? Write an expression to calculate the mean, and use print() to view the result.
+
+**Quiz: Calculate**
+In this quiz you're going to do some calculations for a tiler. Two parts of a floor need tiling. One part is 9 tiles wide by 7 tiles long, the other is 5 tiles wide by 7 tiles long. Tiles come in packages of 6.
+
+How many tiles are needed?
+You buy 17 packages of tiles containing 6 tiles each. How many tiles will be left over?
+
+Fill this in with an expression that calculates how many tiles are needed.
+
+Fill this in with an expression that calculates how many tiles will be left over.
+
+**Quiz: Assign and Modify Variables**
+
+Now it's your turn to work with variables. The comments in this quiz (the lines that begin with #) have instructions for creating and modifying variables. After each comment write a line of code that implements the instruction.
+
+Note that this code uses [scientific notation](https://en.wikipedia.org/wiki/Scientific_notation) to define large numbers. `4.445e8` is equal to `4.445 * 10 ** 8` which is equal to `444500000.0`.
+
+The current volume of a water reservoir (in cubic metres)
+reservoir_volume = 4.445e8
+The amount of rainfall from a storm (in cubic metres)
+rainfall = 5e6
+
+decrease the rainfall variable by 10% to account for runoff
+
+add the rainfall variable to the reservoir_volume variable
+
+increase reservoir_volume by 5% to account for stormwater that flows
+into the reservoir in the days following the storm
+
+decrease reservoir_volume by 5% to account for evaporation
+
+subtract 2.5e5 cubic metres from reservoir_volume to account for water
+that's piped to arid regions.
+
+print the new value of the reservoir_volume variable
+
+**Quiz: Which is denser, Rio or San Francisco?**
+
+Try comparison operators in this quiz! This code calculates the population densities of Rio de Janeiro and San Francisco.
+
+Write code to compare these densities. Is the population of San Francisco more dense than that of Rio de Janeiro? Print True if it is and False if not.
+
+sf_population, sf_area = 864816, 231.89
+rio_population, rio_area = 6453682, 486.5
+
+san_francisco_pop_density = sf_population/sf_area
+rio_de_janeiro_pop_density = rio_population/rio_area
+
+Write code that prints `True` if San Francisco is denser than Rio, and `False` otherwise
+
+
+**Quiz: Fix the Quote**
+
+TODO: Fix this string!
+ford_quote = 'Whether you think you can, or you think you can't--you're right.'
+
+**Quiz: Write a Server Log Message**
+In this programming quiz, you’re going to use what you’ve learned about strings to write a logging message for a server.
+
+You’ll be provided with example data for a user, the time of their visit and the site they accessed. You should use the variables provided and the techniques you’ve learned to print a log message like this one (with the username, url, and timestamp replaced with values from the appropriate variables):
+
+`Yogesh accessed the site http://petshop.com/pets/reptiles/pythons at 16:20`.
+
+Use the Test Run button to see your results as you work on coding this piece by piece.
+
+username = "Kinari"
+timestamp = "04:50"
+url = "http://petshop.com/pets/mammals/cats"
+
+TODO: print a log message using the variables above.
+The message should have the same format as this one:
+`Yogesh accessed the site http://petshop.com/pets/reptiles/pythons at 16:20.`
+
+**Quiz: len()**
+Use string concatenation and the len() function to find the length of a certain movie star's actual full name. Store that length in the name_length variable. Don't forget that there are spaces in between the different parts of a name!
+
+given_name = "William"
+middle_names = "Bradley"
+family_name = "Pitt"
+
+name_length = #todo: calculate how long this name is
+
+Now we check to make sure that the name fits within the driving license character limit
+Nothing you need to do here
+driving_license_character_limit = 28
+print(name_length <= driving_license_character_limit)
+
+**Quiz: Total Sales**
+
+In this quiz, you’ll need to change the types of the input and output data in order to get the result you want.
+
+Calculate and print the total sales for the week from the data provided. Print out a string of the form `"This week's total sales: xxx"`, where xxx will be the actual total of all the numbers. You’ll need to change the type of the input data in order to calculate that total.
+
+```
+  mon_sales = "121"
+  tues_sales = "105"
+  wed_sales = "110"
+  thurs_sales = "98"
+  fri_sales = "95"
+
+  #TODO: Print a string with this format: This week's total sales: xxx
+  # You will probably need to write some lines of code before the print statement.
+```
+
 **`format()` Practice**
 Use the coding space below to practice using the format() string method. There are no right or wrong answers here, just practice!
 
 Write two lines of code below, each assigning a value to a variable
 
-# Now write a print statement using .format() to print out a sentence and the
-#   values of both of the variables
+Now write a print statement using .format() to print out a sentence and the values of both of the variables
