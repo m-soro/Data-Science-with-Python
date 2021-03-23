@@ -32,7 +32,7 @@ The usual order of mathematical operations holds in Python, which you can review
 
 ### Variables and Assignment Operators
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7pxpUot4x0w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/7pxpUot4x0w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Variables I**
 
