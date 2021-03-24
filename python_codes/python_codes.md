@@ -12,8 +12,8 @@ Links to quizzes and my answers(saved in goole colab):
 
 2. [Data Structures](https://colab.research.google.com/drive/13rEh7R4PqmlT1g8blxNAEo_s3XesdYRs?usp=sharing)
 
-3. 1. [Control Flow](https://colab.research.google.com/drive/1ubBH1nsYpl5y2MUJFJ9CMYsQyg3XHV69?usp=sharing)
-3. 2. [Control Flow All Concepts](https://colab.research.google.com/drive/1kMfdc3orniOFsjA4QSvBF325xmUhQ7Wg?usp=sharing)
+3. a. [Control Flow](https://colab.research.google.com/drive/1ubBH1nsYpl5y2MUJFJ9CMYsQyg3XHV69?usp=sharing)
+   b. [Control Flow All Concepts](https://colab.research.google.com/drive/1kMfdc3orniOFsjA4QSvBF325xmUhQ7Wg?usp=sharing)
 
 4. [Functions](https://colab.research.google.com/drive/1ssToeZIPnQ-H4F9lFgTxKEd-UBiYrROK?usp=sharing)
 
