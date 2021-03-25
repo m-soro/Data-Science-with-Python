@@ -92,3 +92,18 @@ Window Functions:
   4 e
 ```
 
+### Errors can be classified into two types:
+1. Syntax errors - if you are not following the correct syntax! 
+2. Exceptions - occur when un expected things happen during execution!
+
+There are several types of exceptions:
+
+**ValueError** - An object of the correct type but inappropriate value is passed as input to a built in operation or function.
+**NameError** - when using a variable that was not defined. 
+**AssertionError** - An assert statement fails.
+**IndexError** - A sequence subscript is out of range.
+**KeyError** - A key can't be found in a dictionary.
+**TypeError** - An object of an unsupported type is passed as input to an operation or function.
+
+
+
