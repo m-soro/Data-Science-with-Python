@@ -98,12 +98,18 @@ Window Functions:
 
 There are several types of exceptions:
 
-**ValueError** - An object of the correct type but inappropriate value is passed as input to a built in operation or function.
-**NameError** - when using a variable that was not defined. 
-**AssertionError** - An assert statement fails.
-**IndexError** - A sequence subscript is out of range.
-**KeyError** - A key can't be found in a dictionary.
-**TypeError** - An object of an unsupported type is passed as input to an operation or function.
+* **ValueError** - An object of the correct type but inappropriate value is passed as input to a built in operation or function.
+* **NameError** - when using a variable that was not defined. 
+* **AssertionError** - An assert statement fails.
+* **IndexError** - A sequence subscript is out of range.
+* **KeyError** - A key can't be found in a dictionary.
+* **TypeError** - An object of an unsupported type is passed as input to an operation or function.
+* **UnboundLocalError** - when you are trying to access a local variable before it is defined. Make sure local scope of variable in function is defined or value assigned to it. 
+* **ValueError:too many values to unpack(expected 2)** - Assignation error. Inconsistency in how many values being unpacked and how many variables the values should be assigned to. 
+
+## Importing local scripts and if name main block explanation
+
+<iframe width="100%" height="433" src="https://www.youtube.com/embed/qjeSn6zZbR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
