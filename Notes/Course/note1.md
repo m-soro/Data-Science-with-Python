@@ -111,5 +111,7 @@ There are several types of exceptions:
 
 <iframe width="100%" height="433" src="https://www.youtube.com/embed/qjeSn6zZbR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Third party libraries and requirements.txt explanation
 
+<iframe width="100%" height="433" src="https://www.youtube.com/embed/epOze9gC6T4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
