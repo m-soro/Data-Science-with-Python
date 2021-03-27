@@ -115,3 +115,6 @@ There are several types of exceptions:
 
 <iframe width="100%" height="433" src="https://www.youtube.com/embed/epOze9gC6T4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## IPython tips and tricks
+
+<iframe width="1037" height="583" src="https://www.youtube.com/embed/hspPtnQwMPg?t=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
