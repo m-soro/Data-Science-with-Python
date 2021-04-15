@@ -184,7 +184,7 @@ I did not want a truncated version so I set all of the columns and rows to be vi
 
 ## Project Links
 
-View the [bikeshare_msoro.py](/projects/project2/bikeshare_msoro.py)
+View the [bikeshare_msoro.py](https://github.com/m-soro/Data-Science-with-Python/tree/main/projects/project2)
 
 Open the colab notebook [google colab](https://colab.research.google.com/drive/1Uunf4ash0c2BRQKtqkhEs3PHSI3FNV3P?usp=sharing)
 
