@@ -15,7 +15,7 @@ I completely avoided looking at how others have done this project. Because I  wa
 
 I found the preceeding set of quizzes very helpful, oftentimes its very difficult to even think where to begin!
 
-[Bikeshare project](/project2/bikeshare_msoro.py)projects/project2/bikeshare_msoro.py
+[Bikeshare project](/projects/project2/bikeshare_msoro.py)projects/project2/bikeshare_msoro.py
 
 ## Project Overview
 
