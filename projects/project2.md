@@ -15,7 +15,7 @@ I completely avoided looking at how others have done this project. Because I  wa
 
 I found the preceeding set of quizzes very helpful, oftentimes its very difficult to even think where to begin!
 
-Find the project links below.
+Find the project links [below](#project-links).
 
 ## Project Overview
 
@@ -184,8 +184,9 @@ I did not want a truncated version so I set all of the columns and rows to be vi
 
 ## Project Links
 
-[My project bikeshare_msoro.py](/projects/project2/bikeshare_msoro.py)
-[View in google colab](https://colab.research.google.com/github/m-soro/bikeshare_project/blob/main/bikeshare_final_v4.ipynb)
+View the [bikeshare_msoro.py](/projects/project2/bikeshare_msoro.py)
+
+Open the colab notebook [google colab](https://colab.research.google.com/github/m-soro/bikeshare_project/blob/main/bikeshare_final_v4.ipynb)
 
 # Conclusion
 
