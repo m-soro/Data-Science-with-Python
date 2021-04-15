@@ -7,8 +7,6 @@ nav_order: 2
 
 # Explore US Bikeshare Data
 
-### ReadMe
-
 # Introduction
 
 This project took me about 4.5 days! I was working on it 5-6 hours a day or maybe even more(if you count little spurts of ideas during the day?). The only prep I did for this project was watching and re-watching the demo project multiple times to get the required specs and rubric expectations.  
@@ -16,6 +14,8 @@ This project took me about 4.5 days! I was working on it 5-6 hours a day or mayb
 I completely avoided looking at how others have done this project. Because I  wanted to challenge myself in writing all of the scripts. Aside from reference materials found below, I also did a lot of google search about python's built in methods. This project went thru multiple iterations and is almost entirely built using google colab.    
 
 I found the preceeding set of quizzes very helpful, oftentimes its very difficult to even think where to begin!
+
+[Bikeshare project](/project2/bikeshare_msoro.py)projects/project2/bikeshare_msoro.py
 
 ## Project Overview
 
