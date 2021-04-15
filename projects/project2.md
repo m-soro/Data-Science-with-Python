@@ -190,3 +190,5 @@ I did not want a truncated version so I set all of the columns and rows to be vi
 # Conclusion
 
 This has been a great learning project! It could be really tough to someone who does not have a lot of python experience and I can't imagine working with messy data! Numpy and Pandas are super powerful and **Python is just a fun language to write scripts and build things!**.
+
+[:arrow_up:](#)
