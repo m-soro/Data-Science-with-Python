@@ -15,7 +15,7 @@ I completely avoided looking at how others have done this project. Because I  wa
 
 I found the preceeding set of quizzes very helpful, oftentimes its very difficult to even think where to begin!
 
-[Bikeshare project](/projects/project2/bikeshare_msoro.py)projects/project2/bikeshare_msoro.py
+Find the project links below.
 
 ## Project Overview
 
@@ -180,8 +180,12 @@ I did not want a truncated version so I set all of the columns and rows to be vi
     * By specified amount of rows to return.
 * Asks user if they want to see the data again.     
 
-
 >Looking ahead: Maybe make this a Flask app!
+
+## Project Links
+
+[My project bikeshare_msoro.py](/projects/project2/bikeshare_msoro.py)
+[View in google colab](https://colab.research.google.com/github/m-soro/bikeshare_project/blob/main/bikeshare_final_v4.ipynb)
 
 # Conclusion
 
