@@ -15,7 +15,7 @@ I completely avoided looking at how others have done this project. Because I  wa
 
 I found the preceeding set of quizzes very helpful, oftentimes its very difficult to even think where to begin!
 
-Find the project links [below](#project-links).
+Find the project links and cities data [below](#project-links).
 
 ## Project Overview
 
