@@ -184,11 +184,11 @@ I did not want a truncated version so I set all of the columns and rows to be vi
 
 ## Project Links
 
-View the [bikeshare_msoro.py](https://github.com/m-soro/Data-Science-with-Python/tree/main/projects/project2)
+* View the [bikeshare_msoro.py](https://github.com/m-soro/Data-Science-with-Python/tree/main/projects/project2)
 
-Open the colab notebook [google colab](https://colab.research.google.com/drive/1Uunf4ash0c2BRQKtqkhEs3PHSI3FNV3P?usp=sharing)
+* Open the colab notebook [google colab](https://colab.research.google.com/drive/1Uunf4ash0c2BRQKtqkhEs3PHSI3FNV3P?usp=sharing)
 
-Test it with these 3 zipped [cities csv files](https://github.com/m-soro/Data-Science-with-Python/tree/main/projects/project2)
+* Test it with these 3 zipped [cities csv files](https://github.com/m-soro/Data-Science-with-Python/tree/main/projects/project2)
 
 # Conclusion
 
