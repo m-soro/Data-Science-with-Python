@@ -188,6 +188,8 @@ View the [bikeshare_msoro.py](https://github.com/m-soro/Data-Science-with-Python
 
 Open the colab notebook [google colab](https://colab.research.google.com/drive/1Uunf4ash0c2BRQKtqkhEs3PHSI3FNV3P?usp=sharing)
 
+Test it with these 3 zipped [cities csv files](https://github.com/m-soro/Data-Science-with-Python/tree/main/projects/project2)
+
 # Conclusion
 
 This has been a great learning project! It could be really tough to someone who does not have a lot of python experience and I can't imagine working with messy data! Numpy and Pandas are super powerful and **Python is just a fun language to write scripts and build things!**.
