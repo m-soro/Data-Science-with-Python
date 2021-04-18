@@ -19,4 +19,4 @@ In this part of the nanodegree program, I'll use github to simulate a developmen
 * handle any merge conflict that may arise
 * delete unwanted branch(es)
 
-I did a acouple of edits (mainly comment updates)in my bikeshare project. A couple of edits in the attached readme file then, filled the neccessary information regarding the git commands in the google doc file submission template.
+I made a couple of edits (mainly comment updates)in my bikeshare project. I also made a couple of edits in the attached readme file, then filled the neccessary information regarding the git commands in the submission template.
