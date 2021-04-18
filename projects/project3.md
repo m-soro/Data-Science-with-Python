@@ -7,4 +7,16 @@ nav_order: 3
 
 # Post your work on Github
 
-In this project, you will learn important tools that all programmers use. First, you’ll get an introduction to working in the terminal. Next, you’ll learn to use git and Github to manage versions of a program and collaborate with others on programming projects. You will post two different versions of a Jupyter Notebook capturing your learnings from the course, and add commits to your project Git repository.
+In this part of the nanodegree program, I'll use github to simulate a development workflow. 
+
+* fork a repo
+* set up a remote repo 
+* create branch(es) 
+* stage commits
+* push commits
+* fetch updates
+* merge branch(es)
+* handle any merge conflict that may arise
+* delete unwanted branch(es)
+
+I did a acouple of edits (mainly comment updates)in my bikeshare project. A couple of edits in the attached readme file then, filled the neccessary information regarding the git commands in the google doc file submission template.
