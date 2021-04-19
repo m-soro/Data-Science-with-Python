@@ -14,10 +14,14 @@ This site contains my projects for this course, course modules, quizzes and my s
 
 This program aims to teach: 
 
-* python foundations for data science 
-* numpy and pandas
-* SQL
-* git and github work flow
+* **Python** foundations for data science 
+* **numpy** and **pandas**
+* **SQL**
+* **Git** and **Github** work flow
+
+## Certicate of Completion
 
 ![image](/assets/images/cert.JPG)
+
+Verified certificate [link](https://confirm.udacity.com/LLRMCMKH)
 
