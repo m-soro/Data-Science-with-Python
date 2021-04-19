@@ -3,7 +3,7 @@ import time
 
 def print_p(statement):
     print(statement)
-    time.sleep(.100)
+    time.sleep(.500)
 
 # Some lambda helper functions
 get_value = lambda x,y,n :x.groupby([y])[y].count().sort_values(ascending=False).head(n).values
