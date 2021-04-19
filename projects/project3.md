@@ -21,3 +21,5 @@ In this part of the nanodegree program, I'll use github to simulate a developmen
 * edit past commits using rebase
 
 I made a couple of edits (mainly comment updates)in my bikeshare project. I also made a couple of edits in the attached readme file, then filled the neccessary information regarding the git commands in the submission template.
+
+* Project 3 [link](https://github.com/m-soro/pdsnd_github)
