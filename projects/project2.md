@@ -9,11 +9,11 @@ nav_order: 2
 
 # Introduction
 
-This project took me about 4.5 days! I was working on it 5-6 hours a day or maybe even more(if you count little spurts of ideas during the day?). The only prep I did for this project was watching and re-watching the demo project multiple times to get the required specs and rubric expectations.  
+This project took me about 4.5 days. I was working on it for 5 to 6 hours a day or maybe even more(if you count little spurts of ideas during the day?). The only prep I did for this project was watching and re-watching the demo project multiple times to get the required specs and rubric expectations.  
 
-I completely avoided looking at how others have done this project. Because I  wanted to challenge myself in writing all of the scripts. Aside from reference materials found below, I also did a lot of google search about python's built in methods. This project went thru multiple iterations and is almost entirely built using google colab.    
+I completely **avoided** looking at how others have done this project. Because I  wanted to challenge myself in writing all of the scripts. Aside from reference materials found below, I also did a lot of google search about python's built in methods. This project went thru multiple iterations and is almost entirely built using google colab.    
 
-I found the preceeding set of quizzes very helpful, oftentimes its very difficult to even think where to begin!
+I found the preceeding set of quizzes very helpful, oftentimes its very difficult to even think where to begin.
 
 Find the project links and cities data [below](#project-links).
 
@@ -28,7 +28,7 @@ In this project, you will make use of Python to explore data related to bike sha
 
 * **It has to be interactive** - asks for user's input
 * **Does not crash** - handles errors
-* **Avoids code duplications** - uses functions. *This is where I spent most of my time.* 
+* **Avoids code duplications** - use of functions. *This is where I spent most of my time.* 
 * **Use of correct data types**
 
 I looked at the suggested template to see the framework and questions provided.
@@ -39,11 +39,11 @@ I used all of the questions, but altered the control flow because I had differen
 
 **Input Validation Functions** 
 
-* Because this is interactive, I think it makes more sense to have functions that just validates answers. Like `y or n ?`, `input integer?` , `select city?`,  `select month?`, `select day?` and most of the time it really boils down to `y or n ?` question! Thanks to boolean logic!. I found it a lot easier to use these functions in conjuction with the `input` function. Oftentimes it easy to just execute this piece of script and see what and where errors occur.
+* Because this is interactive, I wrote functions that just validates answers. Like `y or n ?`, `input integer?` , `select city?`,  `select month?`, `select day?` and because most of the time it really boils down to `y or n ?` question. Thanks to boolean logic. I found it a lot easier to use these functions in together with the `input` function. Oftentimes it easy to just execute this piece of script and see what and where errors occur.
 
 **Functions in general**
 
-* `lambdas` are like little magic tricks! Since my project have different features than the one shown in the demo. I needed to write a custom functions for it. I could script it as pieces of code but, I found it really hard to encapsulate them in a function. I was finally able to abstract them by using `lambdas` to avoid code duplications. `map` function was also used to format the `np.ndarray` that was returned by the `get_values` function(more on this below). 
+* `lambdas` are like little magic tricks. Since my project have different features than the one shown in the demo. I needed to write custom functions for it. I could script it as pieces of code but, I found it really hard to encapsulate them in a function. I was finally able to abstract them by using `lambdas` to avoid code duplications. `map` function was also used to format the `np.ndarray` that was returned by the `get_values` function(more on this below). 
 
 ```python
 
@@ -117,7 +117,7 @@ str_cleaner = lambda x : x[8:x.find("']")]
 
 **Refactoring codes**
 
-* I looked up how to create lambdas and python's built in functions such as `zip`, `enumerate` and `comprehensions`. Most I did not end up using but, its a good refresher. I spent so many hours refactoring this project!
+* I looked up how to create lambdas and python's built in functions such as `zip`, `enumerate` and `comprehensions`. Most I did not end up using but, its a good refresher. I spent many hours in refactoring this project.
 
 **Formatting and printing returned series and arrays** 
 
@@ -133,7 +133,7 @@ str_cleaner = lambda x : x[8:x.find("']")]
 
 **Print 5 consecutively**
 
-* I found this task tough, I was so close in looking how others have done it! I tried experimenting with `enumerate` so that every rows have an index that I can call from my loop. I tried `generator` function since it returns a stream of data and remembers where it left off so I was thinking I can have a start and stop triggers in the loop where the generator's stream cuts off every 5 rows but, I could not get this to work! Finally I decided I'll implement this in a `while loop`. It took a couple of tries but it worked!
+* I found this task tough, I was very close in looking up how others have done it. I tried experimenting with `enumerate` so that every rows have an index that I can call from my loop. I tried `generator` function since it returns a stream of data and remembers where it left off so I was thinking I can have a start and stop triggers in the loop where the generator's stream cuts off every 5 rows but, I could not get this to work. Finally I decided I'll implement this in a `while loop`. It took a couple of tries but it worked.
 
 ```python
 def prompt_user_for_data(df):
@@ -158,11 +158,11 @@ def prompt_user_for_data(df):
 
 I can control which sub-set of rows in the DataFrame are retuned by `df[start:stop]` but, I needed a way for `start to DEcrement by 5` and the `stop to INcrement by 5`, since the project calls to print every 5 lines. 
 
-And, continue up to the end of the DataFrame, so I used `len(df)` and added `+10` for good measure, since not all selected DataFrames can be printed or divided by chunks of 5. When the loop reaches `len(df)+10` it will just return an `Empty DataFrame` and the loop stops! 
+And, continue up to the end of the DataFrame, so I used `len(df)` and added `+10` for good measure, since not all selected DataFrames can be printed or divided by chunks of 5. When the loop reaches `len(df)+10` it will just return an `Empty DataFrame` and the loop stops.
 
 I did not want a truncated version so I set all of the columns and rows to be visible. 
 
->Is there a pandas method for doing this easily??!
+>Is there a pandas method for doing this easily?
 
 ## Reference materials: 
  
@@ -180,7 +180,7 @@ I did not want a truncated version so I set all of the columns and rows to be vi
     * By specified amount of rows to return.
 * Asks user if they want to see the data again.     
 
->Looking ahead: Maybe make this a Flask app!
+>Looking ahead: Maybe make this a Flask app
 
 ## Project Links
 
@@ -192,6 +192,6 @@ I did not want a truncated version so I set all of the columns and rows to be vi
 
 # Conclusion
 
-This has been a great learning project! It could be really tough to someone who does not have a lot of python experience and I can't imagine working with messy data! Numpy and Pandas are super powerful and **Python is just a fun language to write scripts and build things!**.
+This has been a great project! It could be really tough to someone who does not have a lot of python experience. I purposely avoided looking at other student's project because I want to write all of the codes. Aside from meeting the rubric requirements, I also wanted to implement additional features that I come up with. This took a lot of trial and error and many iterations. I learned a lot in completing this project.
 
 [:arrow_up:](#)
