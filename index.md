@@ -10,7 +10,7 @@ nav_order: 1
 
 View the [Syllabus](/assets/files/syllabus.pdf)
 
-This site contains my projects for this course, course modules, quizzes and my solutions.
+This site contains my projects, modules, quizzes and my solutions for this course.
 
 This program aims to teach: 
 
