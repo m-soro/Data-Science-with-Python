@@ -10,13 +10,14 @@ nav_order: 1
 
 View the [Syllabus](/assets/files/syllabus.pdf)
 
+This site contains my projects for this course, course modules, quizzes and my solutions.
 
-* Learn **Python** programming and its powerful libraries for data science - **Numpy** and **Pandas**.
+This program aims to teach: 
 
-* Utilize **SQL** to explore databases to gather and analyze data.
+* python foundations for data science 
+* numpy and pandas
+* SQL
+* git and github work flow
 
-* Collaborate, manage versions and publish your work on the web with **Git** and **Github**.
+![image](/assets/images/cert.png)
 
-:warning: *Currently a work in progress* :warning:
-
-This site will have all of my projects for this course, along with code quizzes and my solutions.
