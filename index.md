@@ -19,5 +19,5 @@ This program aims to teach:
 * SQL
 * git and github work flow
 
-![image](/assets/images/cert.png)
+![image](/assets/images/cert.JPG)
 
