@@ -1,5 +1,5 @@
 
-## Finding Matched and Unmatched Rows with FULL OUTER JOIN
+**Finding Matched and Unmatched Rows with FULL OUTER JOIN**
 
 
 You’re not likely to use `FULL JOIN` (which can also be written as FULL OUTER JOIN) too often, but the syntax is worth practicing anyway. LEFT JOIN and RIGHT JOIN each return unmatched rows from one of the tables—FULL JOIN returns unmatched rows from both tables. FULL JOIN is commonly used in conjunction with aggregations to understand the amount of overlap between two tables.
