@@ -1,5 +1,5 @@
 1. Create a table that provides the following details: actor's first and last name combined as full_name, film title, film description and length of the movie.
-
+```sql
 SELECT a.first_name||' '||a.last_name AS actor, 
        f.title, 
        f.description, 
@@ -7,10 +7,10 @@ SELECT a.first_name||' '||a.last_name AS actor,
 FROM   film_actor fa
 JOIN   actor a ON fa.actor_id = a.actor_id
 JOIN   film f ON  f.film_id = fa.film_id
-
+```
 
 2. Write a query that creates a list of actors and movies where the movie length was more than 60 minutes.
-
+```sql
 SELECT a.first_name||' '||a.last_name AS actor, 
        f.title, 
        f.description, 
@@ -19,9 +19,9 @@ FROM   film_actor fa
 JOIN   actor a ON fa.actor_id = a.actor_id
 JOIN   film f ON  f.film_id = fa.film_id
 WHERE f.length > 60
-
+```
 3. Write a query that captures the actor id, full name of the actor, and counts the number of movies each actor has made. (HINT: Think about whether you should group by actor id or the full name of the actor.) Identify the actor who has made the maximum number movies.
-
+```sql
 SELECT a.actor_id,
        a.first_name||' '||a.last_name AS actor,
        count(*) movie_count
@@ -30,9 +30,9 @@ JOIN   actor a ON fa.actor_id = a.actor_id
 JOIN   film f ON  f.film_id = fa.film_id
 GROUP BY 1,2
 ORDER BY 3 DESC
-
+```
 4. Write a query that displays a table with 4 columns: actor's full name, film title, length of movie, and a column name "filmlen_groups" that classifies movies based on their length. Filmlen_groups should include 4 categories: 1 hour or less, Between 1-2 hours, Between 2-3 hours, More than 3 hours.
-
+```sql
 SELECT a.first_name||' '||a.last_name AS actor,
        f.title AS film_title,
        f.length AS film_length,
@@ -45,11 +45,11 @@ FROM   film_actor fa
 JOIN   actor a ON fa.actor_id = a.actor_id
 JOIN   film f ON f.film_id = fa.film_id
 GROUP BY 1,2,3
-
+```
 5. Now, we bring in the advanced SQL query concepts! Revise the query you wrote above to create a count of movies in each of the 4 filmlen_groups: 1 hour or less, Between 1-2 hours, Between 2-3 hours, More than 3 hours.
 
 -- USING CTE
-
+```sql
 WITH t1 as ( 
 	     SELECT title,
 	   	    length,
@@ -65,10 +65,10 @@ SELECT filmlen_groups,
        COUNT(*)
 FROM t1
 GROUP BY 1
-
+```
 
 -- USING WINDOW FUNCTION
-
+```sql
 SELECT DISTINCT(filmlen_groups),
        COUNT(*) OVER(PARTITION BY filmlen_groups)
 
@@ -82,14 +82,14 @@ FROM (
        FROM film
        GROUP BY 1,2
      ) x
-
+```
 -- Question Set 1
 
 6. We want to understand more about the movies that families are watching. The following categories are considered family movies: Animation, Children, Classics, Comedy, Family and Music.
 
 Create a query that lists each movie, the film category it is classified in, and the number of times it has been rented out.
 		   
-	
+```sql	
 WITH main AS ( 
                SELECT f.title AS film_title, 
                       c.name AS category_name, 
@@ -107,10 +107,10 @@ SELECT DISTINCT(film_title),
        COUNT(rental_date) OVER(PARTITION BY film_title) AS rental_count
 FROM main_table
 ORDER BY 2
-
+```
 
 7. Now we need to know how the length of rental duration of these family-friendly movies compares to the duration that all movies are rented for. Can you provide a table with the movie titles and divide them into 4 levels (first_quarter, second_quarter, third_quarter, and final_quarter) based on the quartiles (25%, 50%, 75%) of the rental duration for movies across all categories? Make sure to also indicate the category that these family-friendly movies fall into.
-
+```sql
 SELECT f.title AS film_title, 
        c.name AS category_name,
        f.rental_duration,
@@ -119,7 +119,7 @@ FROM film f
 JOIN film_category fc ON f.film_id = fc.film_id
 JOIN category c ON c.category_id = fc.category_id
 AND c.name IN ('Animation','Children','Classics','Comedy','Family','Music')
-
+```
 
 8. Finally, provide a table with the family-friendly film category, each of the quartiles, and the corresponding count of movies within each combination of film category for each corresponding rental duration category. The resulting table should have three columns:
 
@@ -128,7 +128,7 @@ AND c.name IN ('Animation','Children','Classics','Comedy','Family','Music')
 3. Count
 
 Solution:
-
+```sql
 WITH main AS ( 
 	       SELECT f.title AS film_title, 
                       c.name AS category_name,
@@ -146,12 +146,12 @@ SELECT category_name,
 FROM main
 GROUP BY 1,2
 ORDER BY 1,2
-
+```
 -- Question Set 2
 
 9. We want to find out how the two stores compare in their count of rental orders during every month for all the years we have data for. Write a query that returns the store ID for the store, the year and month and the number of rental orders each store has fulfilled for that month. Your table should include a column for each of the following: year, month, store ID and count of rental orders fulfilled during that month.
 
-
+```sql
 SELECT DATE_PART('month',r.rental_date) rental_month, 
        DATE_PART('year',r.rental_date) rental_year, 
        s.store_id,
@@ -162,10 +162,10 @@ JOIN store AS s ON s.store_id = st.store_id
 GROUP BY 1,2,3
 ORDER BY 4 DESC
 
-
+```
 
 10. We would like to know who were our top 10 paying customers, how many payments they made on a monthly basis during 2007, and what was the amount of the monthly payments. Can you write a query to capture the customer name, month and year of payment, and total payment amount for each month by these top 10 paying customers?
-
+```sql
 WITH t1 AS ( 
              SELECT c.first_name || ' ' || c.last_name AS customer,
 		    c.customer_id,
@@ -185,11 +185,11 @@ FROM t1
 JOIN payment p ON p.customer_id = t1.customer_id
 GROUP BY 1,2
 ORDER BY 2
-
+```
 
 11. Finally, for each of these top 10 paying customers, I would like to find out the difference across their monthly payments during 2007. Please go ahead and write a query to compare the payment amounts in each successive month. Repeat this for each of these 10 paying customers. Also, it will be tremendously helpful if you can identify the customer name who paid the most difference in terms of payments.
 
-
+```sql
 WITH t1 AS ( 
              SELECT c.first_name || ' ' || c.last_name AS customer,
 		    c.customer_id,
@@ -214,7 +214,7 @@ WITH t1 AS (
 SELECT *, 
        COALESCE(LEAD(pay_amount) OVER (PARTITION BY customer ORDER BY pay_month) - pay_amount,0) AS difference
 FROM t2
-
+```
 
 
    
