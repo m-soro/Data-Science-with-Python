@@ -1,7 +1,7 @@
 Warm up questions:
 
 A. Find the average the number of events that occur each day.
-
+```sql
 SELECT channel,
        ROUND(avg(no_of_events),2) avg_events
 FROM
@@ -14,9 +14,9 @@ FROM
     ) x
 GROUP BY 1
 ORDER BY 2 DESC
-
+```
 B. Find only the orders that took place in the same month and year as the first order, and then pull the average for each type of paper qty in this month
-
+```sql
 SELECT DATE_TRUNC('month',occurred_at) month_order, 
        AVG(standard_qty) standard,
        AVG(gloss_qty) gloss,
@@ -29,11 +29,11 @@ WHERE DATE_TRUNC('month',occurred_at) = (
 					  LIMIT 1
                                         )
 GROUP BY 1
-
+```
 -- SUBQUERRY QUIZZES
 
 1. Provide the name of the sales_rep in each region with the largest amount of total_amt_usd sales.
-
+```sql
 SELECT z.total_usd,
        z.region,
        x.rep
@@ -63,10 +63,10 @@ JOIN (
 ON x.total_usd = z.total_usd
 ORDER BY 1 DESC
 
-
+```
 
 2. For the region with the largest (sum) of sales total_amt_usd, how many total (count) orders were placed?
-
+```sql
 SELECT COUNT(*) num_of_orders,
        r.name region
 FROM orders o
@@ -90,9 +90,9 @@ WHERE r.name = (
 GROUP BY 2
 
 
-
+```
 3. How many accounts had more total purchases than the account name which has bought the most standard_qty paper throughout their lifetime as a customer?
-
+```sql
 SELECT COUNT(*)
 FROM (
        SELECT a.name account_name,
@@ -116,9 +116,9 @@ FROM (
      ) y
 
 
-
+```
 4. For the customer that spent the most (in total over their lifetime as a customer) total_amt_usd, how many web_events did they have for each channel?
-
+```sql
 SELECT a.name account_name,
        w.channel channel,
        COUNT(*) num_of_times
@@ -138,11 +138,11 @@ WHERE a.name = (
               )
 GROUP BY 1,2
 ORDER BY 3 DESC
-
+```
 
 
 5. What is the lifetime average amount spent in terms of total_amt_usd for the top 10 total spending accounts?
-
+```sql
 SELECT AVG(total_usd) avg_total_usd
 FROM (
        SELECT a.name accounts,
@@ -154,10 +154,10 @@ FROM (
        LIMIT 10
      ) x
 
-
+```
 
 6. What is the lifetime average amount spent in terms of total_amt_usd, including only the companies that spent more per order, on average, than the average of all orders.
-
+```sql
 SELECT AVG(avg_total_usd)
 FROM (
        SELECT a.name account_name,
@@ -170,12 +170,12 @@ HAVING avg(total_amt_usd) > (
                               FROM orders
                             )
 ) x
-
+```
 -- WITH STATEMENTS
 
 1. Provide the name of the sales_rep in each region with the largest amount of total_amt_usd sales.
 
-
+```sql
 WITH ttl_rep_rgn AS ( 
                       SELECT MAX(total_usd) total_usd,
 		             region
@@ -205,10 +205,10 @@ SELECT trr.region,
 FROM ttl_rep_rgn trr
 JOIN rep_total rt ON rt.total_usd = trr.total_usd
 ORDER BY 3 DESC
-
+```
 
 2. For the region with the largest sales total_amt_usd, how many total orders were placed?
-
+```sql
 WITH rgn_ttl AS ( 
                   SELECT MAX(total_usd) total_usd,
 		         region
@@ -238,9 +238,9 @@ WHERE r.name = (
                  SELECT region
 		 FROM max_rgn
                )
-
+```
 3. How many accounts had more total purchases than the account name which has bought the most standard_qty paper throughout their lifetime as a customer?
-
+```sql
 WITH max_std_qty AS ( 
                       SELECT a.name account,
 		             SUM(o.standard_qty) std_qty,
@@ -268,9 +268,9 @@ FROM (
                      ) 
 ) x
 
-
+```
 4. For the customer that spent the most (in total over their lifetime as a customer) total_amt_usd, how many web_events did they have for each channel?
-
+```sql
 WITH max_acct_spend AS ( 
                          SELECT account
 			 FROM ( 
@@ -294,10 +294,10 @@ WHERE a.name = (
                )
 GROUP BY 1,2
 ORDER BY 3 DESC
-
+```
 
 5. What is the lifetime average amount spent in terms of total_amt_usd for the top 10 total spending accounts?
-
+```sql
 WITH avg_spent_top10 AS ( 
                           SELECT a.name account,
 			         SUM(o.total_amt_usd) total_usd
@@ -310,10 +310,10 @@ WITH avg_spent_top10 AS (
 SELECT ROUND(AVG(total_usd),2) avg_top10
 FROM avg_spent_top10
 
-
+```
 6. What is the lifetime average amount spent in terms of total_amt_usd, including only the companies that spent more per order, on average, than the average of all orders.
 
-
+```sql
 WITH avg_all AS ( 
                   SELECT a.name account,
 		         AVG(total_amt_usd) avg_usd
@@ -333,3 +333,4 @@ FROM (
 	                 FROM orders 
                        ) 
      ) x
+```     
