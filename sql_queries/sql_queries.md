@@ -8,7 +8,7 @@ nav_order: 4
 
 ### Project Prep Questions
 
-* Uses a combination of [all SQL command](project_questions.txt).
+* Uses a combination of [all SQL command](project_questions.md).
 
 ### Advance Joins
 
