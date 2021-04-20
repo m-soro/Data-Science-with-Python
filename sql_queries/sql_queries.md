@@ -16,18 +16,18 @@ nav_order: 4
 
 ### Window functions
 
-* Uses [Window functions](window_functions.txt): `OVER`, `PARTITION BY`, `ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LAG`, `LEAD` and `NTILE`.
+* Uses [Window functions](window_functions.md): `OVER`, `PARTITION BY`, `ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LAG`, `LEAD` and `NTILE`.
 
 
 ### CTEs and Subqueries
 
-* Uses [Subqueries and `WITH`](cte_and_subqueries.txt). statement
+* Uses [Subqueries and `WITH`](cte_and_subqueries.md). statement
 
 
 ### Aggregations
 
-* Uses `SUM`, `AVG`, `MIN`, `MAX`, `COUNT`, `NULLs`, `DISTINCT`, `HAVING`, `DATE_TRUNC`, `DATE_PART` and `CASE` [view queries](aggregations.txt).
+* Uses `SUM`, `AVG`, `MIN`, `MAX`, `COUNT`, `NULLs`, `DISTINCT`, `HAVING`, `DATE_TRUNC`, `DATE_PART` and `CASE` [view queries](aggregations.md).
 
 ### Joins
 
-* Uses [JOINS](joins.txt).
+* Uses [JOINS](joins.md).
