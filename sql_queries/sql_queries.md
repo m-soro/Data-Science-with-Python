@@ -12,7 +12,7 @@ nav_order: 4
 
 ### Advance Joins
 
-* Uses [Advance JOINS](advanced_joins_performance_tuning.txt): `SELF JOINS` and `UNION`.
+* Uses [Advance JOINS](advanced_joins_performance_tuning.md): `SELF JOINS` and `UNION`.
 
 ### Window functions
 
