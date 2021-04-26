@@ -1,6 +1,6 @@
 ---
 layout: default
-image: https://i.morioh.com/3618b64471.png
+image: https://www.teahub.io/photos/full/21-216425_2048x1152-python-programming-python-az-python-for.jpg
 nav_order: 1
 ---
 
